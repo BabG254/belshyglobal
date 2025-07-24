@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sexual Reproductive Health - Belshy Global Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6A5ACD',
+                        secondary: '#F4A1B2',
+                        accent: '#ADD8E6',
+                        dark: '#333333'
+                    },
+                    fontFamily: {
+                        heading: ['Montserrat', 'sans-serif'],
+                        body: ['Lato', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg { background: linear-gradient(135deg, #6A5ACD 0%, #F4A1B2 100%); }
+        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        .fade-in.appear { opacity: 1; transform: translateY(0); }
+        .logo-gradient { background: linear-gradient(135deg, #6A5ACD 0%, #F4A1B2 100%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="font-body text-dark bg-white">
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="w-16 h-16 rounded-full overflow-hidden mr-4 shadow-lg border-2 border-white">
+                    <img src="Belshy logo.jpg" alt="Belshy Global Solutions Logo" class="w-full h-full object-cover">
+                </div>
+                <h1 class="text-2xl font-heading font-bold logo-gradient">Belshy Global Solutions</h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="font-medium hover:text-primary transition">Home</a>
+                <a href="index.html#about" class="font-medium hover:text-primary transition">About</a>
+                <a href="index.html#services" class="font-medium hover:text-primary transition">Services</a>
+                <a href="index.html#contact" class="font-medium hover:text-primary transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="relative py-20 md:py-32 gradient-bg">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl text-white">
+                <h1 class="text-5xl md:text-6xl font-heading font-bold mb-6 fade-in">Sexual Reproductive Health</h1>
+                <p class="text-xl mb-8 fade-in">Comprehensive education and resources to promote healthy relationships and informed decision-making.</p>
+                <a href="index.html#contact" class="inline-block bg-white text-primary font-bold py-3 px-8 rounded-full hover:bg-accent transition duration-300 fade-in">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">Empowering Informed Choices</h2>
+                <p class="text-lg max-w-3xl mx-auto">Our sexual reproductive health program provides comprehensive education, resources, and support to help young people make informed decisions about their health and relationships.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-8 fade-in">
+                    <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center mb-6">
+                        <i class="fas fa-graduation-cap text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Comprehensive Education</h3>
+                    <p>Age-appropriate education covering anatomy, reproduction, contraception, and healthy relationships.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 fade-in">
+                    <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center mb-6">
+                        <i class="fas fa-user-md text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Health Services</h3>
+                    <p>Access to confidential health services, counseling, and referrals to healthcare providers.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 fade-in">
+                    <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center mb-6">
+                        <i class="fas fa-comments text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Peer Support</h3>
+                    <p>Safe spaces for discussion, peer education, and ongoing support from trained facilitators.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-16 pb-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Belshy Global Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('appear');
+                    }
+                });
+            }, { threshold: 0.1 });
+            fadeElements.forEach(element => { observer.observe(element); });
+        });
+    </script>
+</body>
+</html>
