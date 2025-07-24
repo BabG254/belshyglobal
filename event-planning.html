@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Planning - Belshy Global Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6A5ACD',
+                        secondary: '#F4A1B2',
+                        accent: '#ADD8E6',
+                        dark: '#333333'
+                    },
+                    fontFamily: {
+                        heading: ['Montserrat', 'sans-serif'],
+                        body: ['Lato', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-bg { background: linear-gradient(135deg, #6A5ACD 0%, #F4A1B2 100%); }
+        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        .fade-in.appear { opacity: 1; transform: translateY(0); }
+        .logo-gradient { background: linear-gradient(135deg, #6A5ACD 0%, #F4A1B2 100%); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="font-body text-dark bg-white">
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="w-16 h-16 rounded-full overflow-hidden mr-4 shadow-lg border-2 border-white">
+                    <img src="Belshy logo.jpg" alt="Belshy Global Solutions Logo" class="w-full h-full object-cover">
+                </div>
+                <h1 class="text-2xl font-heading font-bold logo-gradient">Belshy Global Solutions</h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="font-medium hover:text-primary transition">Home</a>
+                <a href="index.html#services" class="font-medium hover:text-primary transition">Services</a>
+                <a href="index.html#contact" class="font-medium hover:text-primary transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-20 gradient-bg text-white">
+        <div class="container mx-auto px-4 text-center">
+            <div class="fade-in">
+                <i class="fas fa-calendar-alt text-6xl mb-6 text-accent"></i>
+                <h1 class="text-4xl md:text-6xl font-heading font-bold mb-6">Event Planning</h1>
+                <p class="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
+                    Professional event planning and coordination services for corporate meetings, workshops, and special occasions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Details -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="fade-in mb-12">
+                    <h2 class="text-3xl font-heading font-bold mb-6">Creating Memorable Professional Events</h2>
+                    <p class="text-lg leading-relaxed">
+                        Our Event Planning services specialize in creating exceptional corporate events, conferences, 
+                        workshops, and special occasions that align with your business objectives. From intimate board 
+                        meetings to large-scale conferences, we handle every detail to ensure your event runs smoothly 
+                        and achieves its intended goals.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+                    <div class="fade-in">
+                        <h3 class="text-2xl font-heading font-bold mb-4">Event Types We Manage</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-primary mr-3 mt-1"></i>
+                                <span>Corporate Conferences & Summits</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-primary mr-3 mt-1"></i>
+                                <span>Training Workshops & Seminars</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-primary mr-3 mt-1"></i>
+                                <span>Product Launches & Presentations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-primary mr-3 mt-1"></i>
+                                <span>Board Meetings & Executive Retreats</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-primary mr-3 mt-1"></i>
+                                <span>Team Building Events</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-primary mr-3 mt-1"></i>
+                                <span>Awards Ceremonies & Galas</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="fade-in">
+                        <h3 class="text-2xl font-heading font-bold mb-4">Our Services Include</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-secondary mr-3 mt-1"></i>
+                                <span>Venue Selection & Management</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-secondary mr-3 mt-1"></i>
+                                <span>Catering & Hospitality Coordination</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-secondary mr-3 mt-1"></i>
+                                <span>Audio-Visual & Technology Setup</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-secondary mr-3 mt-1"></i>
+                                <span>Registration & Guest Management</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-secondary mr-3 mt-1"></i>
+                                <span>Marketing & Promotion Support</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-secondary mr-3 mt-1"></i>
+                                <span>On-Site Event Coordination</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Event Planning Process -->
+                <div class="bg-gray-50 rounded-xl p-8 mb-16 fade-in">
+                    <h3 class="text-2xl font-heading font-bold mb-6">Our Event Planning Process</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                        <div class="text-center">
+                            <div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-lightbulb text-white text-xl"></i>
+                            </div>
+                            <h4 class="font-bold mb-2">Conceptualization</h4>
+                            <p class="text-sm">Understanding your vision, objectives, and requirements</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 rounded-full bg-secondary flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-tasks text-white text-xl"></i>
+                            </div>
+                            <h4 class="font-bold mb-2">Planning</h4>
+                            <p class="text-sm">Detailed planning, timeline creation, and vendor coordination</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 rounded-full bg-accent flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-play text-white text-xl"></i>
+                            </div>
+                            <h4 class="font-bold mb-2">Execution</h4>
+                            <p class="text-sm">Seamless event execution with professional coordination</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 rounded-full bg-green-600 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-chart-bar text-white text-xl"></i>
+                            </div>
+                            <h4 class="font-bold mb-2">Evaluation</h4>
+                            <p class="text-sm">Post-event analysis and feedback collection</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Why Choose Us -->
+                <div class="mb-16 fade-in">
+                    <h3 class="text-2xl font-heading font-bold mb-6 text-center">Why Choose Our Event Planning Services</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="w-20 h-20 rounded-full bg-primary bg-opacity-10 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-award text-primary text-2xl"></i>
+                            </div>
+                            <h4 class="font-bold text-lg mb-2">Professional Excellence</h4>
+                            <p class="text-sm">Years of experience in corporate event management</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-20 h-20 rounded-full bg-secondary bg-opacity-10 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-handshake text-secondary text-2xl"></i>
+                            </div>
+                            <h4 class="font-bold text-lg mb-2">Vendor Network</h4>
+                            <p class="text-sm">Established relationships with trusted suppliers and venues</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-20 h-20 rounded-full bg-accent bg-opacity-10 flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-clock text-accent text-2xl"></i>
+                            </div>
+                            <h4 class="font-bold text-lg mb-2">Timely Delivery</h4>
+                            <p class="text-sm">Consistent on-time execution and attention to detail</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Section -->
+                <div class="text-center fade-in">
+                    <h3 class="text-2xl font-heading font-bold mb-4">Ready to Plan Your Next Event?</h3>
+                    <p class="text-lg mb-8">
+                        Let us handle the details while you focus on your objectives. Contact us to discuss your upcoming event requirements.
+                    </p>
+                    <a href="index.html#contact" class="bg-primary text-white font-bold py-4 px-8 rounded-lg hover:bg-secondary transition duration-300 inline-flex items-center">
+                        Plan Your Event
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex items-center justify-center mb-6">
+                <div class="w-10 h-10 rounded-full overflow-hidden mr-3">
+                    <img src="Belshy logo.jpg" alt="Belshy Global Solutions Logo" class="w-full h-full object-cover">
+                </div>
+                <h3 class="text-xl font-heading font-bold">Belshy Global Solutions</h3>
+            </div>
+            <p class="mb-4">Professional Leadership Development, Educational Consulting, Training & Event Planning Services</p>
+            <p>&copy; 2025 Belshy Global Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('appear');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            fadeElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>
